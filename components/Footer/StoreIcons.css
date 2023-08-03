@@ -1,0 +1,19 @@
+/* StoreIcons.css */
+.store-icons {
+    margin-top: 10px;
+  }
+  
+  .store-icon {
+    font-size: 24px;
+    margin-right: 100px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .store-icon:hover {
+    color: #28a745;
+  }
+  

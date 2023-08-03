@@ -1,0 +1,95 @@
+/* Estilos generales */
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.course-image {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.course-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.course-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.course-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  padding: 16px;
+  border-radius: 4px;
+  color: rgb(25, 170, 163);
+}
+
+.print-certificate-btn {
+  background-color: #f3fcd9;
+  color: #a3bf3e;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 200px;
+
+}
+
+.print-certificate-btn:hover {
+  background-color: #f4f4f4;
+  color: #919191;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  margin-top: 10px;
+  overflow: hidden;
+  width: 55%;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #005a71;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .card-content {
+    flex-direction: row;
+    gap: 15px;
+
+
+    
+  }
+
+  .course-info {
+    width: 70%;
+    margin-left: 20px;
+  }
+}

@@ -1,0 +1,56 @@
+/* Styles.css */
+/* .sider{
+     position: absolute;
+  top: 40%;
+  right: 3%;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.inscriptions-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+} */
+/* Styles.css */
+
+/* Estilos base para el contenedor principal */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar contenido horizontalmente */
+}
+
+/* Estilos para el contenedor del sider */
+.sider {
+  position: relative; /* Cambiado a relativo para que flote dentro del contenedor */
+  margin-top: 20px; /* Espacio superior para separarlo del borde superior */
+  width: 100%; /* Ocupar el ancho completo del contenedor */
+  max-width: 300px; /* Ancho máximo para evitar que se vuelva demasiado ancho en pantallas grandes */
+}
+
+/* Estilos para los contenedores de las inscripciones */
+.inscriptions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%; /* Ocupar el ancho completo del contenedor */
+  max-width: 600px; /* Ancho máximo para evitar que se vuelva demasiado ancho en pantallas grandes */
+}
+
+/* Estilos adicionales para hacerlo responsive */
+@media screen and (max-width: 768px) {
+  /* Aplicar estos estilos cuando el ancho de la pantalla sea 768px o menos */
+  .home-container {
+    padding: 0 15px; /* Agregar espacio lateral en pantallas más pequeñas */
+  }
+
+  .sider,
+  .inscriptions-container {
+    max-width: 100%; /* Permitir que los elementos ocupen todo el ancho en pantallas pequeñas */
+  }
+}

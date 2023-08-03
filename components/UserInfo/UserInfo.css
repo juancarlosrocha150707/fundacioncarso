@@ -1,0 +1,155 @@
+/* .user-info-container {
+  background-color: #f2f8f9;
+  padding: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+ .user-info-container p {
+  margin: auto;
+  padding: 5px 0;
+  color: #005a71;
+  text-align: justify;
+  position: relative;
+  left: 23%;
+  top: auto;
+} 
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background-color: #297465;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 85px;
+  color: white;
+
+}
+.user-name {
+  font-family: "Varela Round", sans-serif;
+  font-size: 40px;
+  color: #15676b;
+  bottom: 0;
+  padding: 0px;
+}
+.user-email {
+  font-family: "Edu SA Beginner", cursive;
+  font-size: 20px;
+  margin-top: 0;
+  padding: 0px;
+}
+.user-info,
+.user-pp {
+  display: flex;
+  flex-direction: column;
+ text-align: left;
+  width: 200px;
+  justify-content: space-evenly;
+ padding: 0px;
+ 
+}
+.logo{
+  position: absolute;
+  width: 32%;
+  height: auto;
+  left: 10px;
+  top: 4%;
+} */
+/* Estilos para el contenedor de información del usuario */
+.user-info-container {
+  background-color: #f2f8f9;
+  padding: 20px; /* Agregar espacio de relleno para mejorar la legibilidad */
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+  align-items: center;
+  width: 100%;
+}
+
+/* Estilos para el párrafo dentro del contenedor */
+.user-info-container p {
+  margin: 10px 0; /* Espacios vertical para separar el párrafo del borde */
+  color: #005a71;
+  text-align: center;
+}
+
+/* Estilos para el avatar */
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background-color: #297465;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 85px;
+  color: white;
+  margin: 0 auto; /* Centrar horizontalmente */
+  margin-bottom: 10px;
+}
+
+/* Estilos para el nombre del usuario */
+.user-name {
+  font-family: "Varela Round", sans-serif;
+  font-size: 30px; /* Reducir el tamaño del nombre en pantallas pequeñas */
+  color: #15676b;
+  margin: 0;
+}
+
+/* Estilos para el correo electrónico del usuario */
+.user-email {
+  font-family: "Edu SA Beginner", cursive;
+  font-size: 16px; /* Reducir el tamaño del correo en pantallas pequeñas */
+  margin: 5px 0;
+}
+
+/* Estilos para los contenedores de información */
+.user-info,
+.user-pp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%; /* Ocupar el ancho completo del contenedor */
+  max-width: 400px; /* Ancho máximo para evitar que se vuelva demasiado ancho en pantallas grandes */
+  margin: 0 auto; /* Centrar horizontalmente */
+  padding: 10px 0; /* Agregar espacio de relleno vertical */
+}
+
+/* Estilos para el logo */
+.logo {
+  position: absolute;
+  width: 20%; /* Ajusta el tamaño del logo en pantallas grandes */
+  height: auto;
+  left: 10px;
+  top: 4%;
+  z-index: 100; /* Agrega un índice z para asegurarte de que el logo esté en la parte superior */
+}
+
+/* Estilos adicionales para hacerlo responsive */
+@media screen and (max-width: 768px) {
+  /* Aplicar estos estilos cuando el ancho de la pantalla sea 768px o menos */
+  .user-info,
+  .user-pp {
+    font-size: 14px; /* Reducir el tamaño de fuente en pantallas pequeñas */
+    max-width: 100%; /* Permitir que los contenedores ocupen todo el ancho en pantallas pequeñas */
+  }
+
+  .user-name {
+    font-size: 24px; /* Ajustar el tamaño del nombre en pantallas pequeñas */
+  }
+}
+@media screen and (max-width: 768px) {
+  /* Aplicar estos estilos cuando el ancho de la pantalla sea 768px o menos */
+  .logo {
+    width: 30%; /* Ajusta el tamaño del logo en pantallas más pequeñas */
+    top: 2%; /* Ajusta la posición superior del logo */
+  }
+}
