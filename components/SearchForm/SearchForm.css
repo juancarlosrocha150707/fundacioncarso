@@ -1,32 +1,4 @@
-/* Estilos para el input de búsqueda */
-/* .search-container input {
-    width: 15%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    outline: none;
-    margin-top: -1%;
-  }
-  
-  .search-container input::placeholder {
-    color: #aaa;
-  }
-  
-  .search-container input:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
-  
-  }
-  
-  .search-input{
-    position: absolute;
-    right: 10px;
-    top: 14%;
-    z-index: 100;
-  } */
-  /* Estilos para el input de búsqueda */
+
 .search-container input {
   width: 100%; /* Ocupa el ancho completo del contenedor */
   padding: 10px;
@@ -56,11 +28,19 @@
   margin: 0 auto; /* Centra horizontalmente el contenedor en la pantalla */
 }
 
-/* Estilos adicionales para hacerlo responsive */
-@media screen and (max-width: 768px) {
-  /* Aplicar estos estilos cuando el ancho de la pantalla sea 768px o menos */
+/* Estilos para el contenedor del input de búsqueda en pantallas grandes */
+@media screen and (min-width: 769px) {
   .search-input {
-    max-width: 100%; /* Permitir que el contenedor ocupe todo el ancho en pantallas pequeñas */
-    padding: 0 15px; /* Agregar espacio lateral en pantallas más pequeñas */
+    max-width: 500px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto; /* Centra horizontalmente el contenedor en la pantalla */
+  }
+
+  .search-container {
+    display: flex; /* Usa flexbox para alinear el contenido */
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+  }
+  
+  .search-container input {
+    font-size: 20px; /* Ajusta el tamaño de fuente según tus necesidades */
   }
 }

@@ -1,28 +1,11 @@
-/* Styles.css */
-/* .sider{
-     position: absolute;
-  top: 40%;
-  right: 3%;
-}
 
-.home-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.inscriptions-container{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-} */
-/* Styles.css */
 
 /* Estilos base para el contenedor principal */
 .home-container {
   display: flex;
   flex-direction: column;
   align-items: center; /* Centrar contenido horizontalmente */
+  width: 100%;
 }
 
 /* Estilos para el contenedor del sider */
@@ -41,6 +24,7 @@
   width: 100%; /* Ocupar el ancho completo del contenedor */
   max-width: 600px; /* Ancho máximo para evitar que se vuelva demasiado ancho en pantallas grandes */
 }
+
 
 /* Estilos adicionales para hacerlo responsive */
 @media screen and (max-width: 768px) {
