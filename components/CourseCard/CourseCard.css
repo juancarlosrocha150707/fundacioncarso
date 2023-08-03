@@ -82,10 +82,10 @@
 @media (min-width: 768px) {
   .card-content {
     flex-direction: row;
-    gap: 15px;
+    gap: 15px; /*gap
 
 
-    
+
   }
 
   .course-info {
