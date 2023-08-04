@@ -16,7 +16,10 @@ const Home = () => {
   // Si el usuario aún no ha sido cargado, mostramos un mensaje de carga.
   if (!user) return <p>'Cargando....</p>;
 
+  
+
   return (
+    <div>
     <div className="home-container">
       {" "}
       {/* Contenedor principal del componente Home */}
@@ -37,7 +40,9 @@ const Home = () => {
           />
         ))}
       </div>
-      <Footer /> {/* Mostramos el componente Footer */}
+     
+    </div>
+    <Footer /> {/* Mostramos el componente Footer */}
     </div>
   );
 };

@@ -1,5 +1,10 @@
 
 /* Estilos para el párrafo dentro del contenedor */
+.user-info-container{
+width: 95%;
+
+}
+
 .user-info-container p {
   margin: 10px 0; 
   color: #005a71;
@@ -50,6 +55,7 @@
 .logo {
   width: 20%; /* Tamaño del logo */
   top: 1%; /* Posición superior del logo */
+  left: 3%;
 }
 
 
@@ -67,7 +73,7 @@
   
   }
   .logo {
-    width: 40%; /* Ajusta el tamaño del logo en pantallas más pequeñas */
+    width: 30%; /* Ajusta el tamaño del logo en pantallas más pequeñas */
     top: 2%; /* Ajusta la posición superior del logo */
   }
   /* Estilos para pantallas pequeñas */
@@ -83,7 +89,17 @@
       font-size: 24px; /* Ajustar el tamaño del nombre en pantallas pequeñas */
     }
   
-   
+    .user-info-container{
+      width: auto;
+      height: 200px;
+      
+      }
+      .logo {
+        width: 200px; /* Ajusta el tamaño del logo en pantallas más pequeñas */
+        top: 2%; /* Ajusta la posición superior del logo */
+      }
+      
   }
+  
   
 } 
